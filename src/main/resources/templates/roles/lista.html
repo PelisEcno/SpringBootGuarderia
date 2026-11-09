@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Roles</title>
+</head>
+<body>
+
+<h2>Listado de Roles</h2>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID Rol</th>
+        <th>Nombre Rol</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="n : ${roles}">
+        <td th:text="${n.idRol}"></td>
+        <td th:text="${n.nombreRol}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
